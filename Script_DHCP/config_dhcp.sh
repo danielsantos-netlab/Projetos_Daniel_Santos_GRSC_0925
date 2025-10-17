@@ -38,6 +38,14 @@ fi
 
 while true; do
 
+	# 3.1 - Validação da Classe C
+	# O que faz: Verifica se o IP do servidor pertence à Classe C (192.168.x.x) e se os octetos estão dentro dos intervalos válidos (1-254).
+	# O que faz o =~: Operador de correspondência de expressão regular em bash, usado para validar o formato do IP. Como funciona: Verifica se a variável à esquerda corresponde ao padrão regex à direita.
+	# O que faz o ^: Indica o início da string.
+	# O que faz o $: Indica o fim da string.
+	# O que faz o \.: Escapa o ponto, que é um caractere especial em regex, para que seja interpretado literalmente.
+	# O que faz o [0-9]{1,3}: Corresponde a qualquer número entre 0 e 999, mas a validação adicional garante que os octetos estão entre 1 e 254.
+
 	read -p "Digite o IP desejado para o Servidor (Inserir unicamente IPs de Classe C): " IP_SERVIDOR
 
     TERCEIRO_OCTETO=$(echo "$IP_SERVIDOR" | cut -d'.' -f3)
@@ -67,6 +75,9 @@ VERIFICACAO=""
 
 while [ "$VERIFICACAO" != "y" ] && [ "$VERIFICACAO" != "Y" ]; do
 
+    # 4.1 - Solicitar o escopo de IPs desejado e gateway/DNS
+    # O que faz: Pede ao utilizador apenas o 4º octeto do range, gateway e DNS, para formar os IPs completos
+	# O que faz o -p do read: Exibe uma mensagem para o utilizador antes de esperar pela entrada.
 
     read -p "Qual vai ser o início do range DHCP (4º octeto)? " OCTETO_INICIO_RANGE
     read -p "Qual vai ser o fim do range DHCP (4º octeto)? " OCTETO_FIM_RANGE
