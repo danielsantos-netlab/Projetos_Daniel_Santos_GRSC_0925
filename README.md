@@ -1,20 +1,34 @@
-# ProjetoFinal_Linux
+# Repositório de Scripts Shell desenvolvidos no percurso do CET de Gestão de Redes e Sistemas Computacionais (ATEC)
 Criação de Scripts de DHCP, FTP e SSH
 
-# Scripts Shell
+#Sobre o Repositório
 
-Este repositório contém uma coleção de scripts em Shell que criámos para automatizar tarefas e resolver problemas comuns.
+Este repositório foi criado com o objetivo de armazenar e documentar todos os scripts em Shell (Bash) que vou desenvolvendo ao longo do meu percurso académico e profissional.
+Aqui reúno projetos práticos, automações e ferramentas simples que fui criando durante o curso de Gestão de Redes e Sistemas Computacionais (CET ATEC), com foco em administração de sistemas Linux, redes e serviços.
 
-## Scripts Disponíveis
+A ideia é ter um espaço organizado e centralizado para guardar, rever e melhorar os meus scripts à medida que evoluo como profissional de TI.
 
-- `config_dhcp.sh`: Este script foi concebido para simplificar a configuração de um servidor DHCP em CentOS, operando em redes de Classe C com um CIDR /24. O programa valida os endereços IP inseridos pelo utilizador, configura automaticamente as interfaces de rede e os serviços necessários, e garante que a comunicação na rede é segura e funcional.
-O objetivo é fornecer uma solução robusta e de fácil utilização para administradores de sistema.
+#Estrutura Atual
 
-- `config_ftp.sh`: Este script configura um servidor FTP usando vsftpd em modo ativo, cria um utilizador de demonstração, define diretórios isolados com permissões específicas e assegura que apenas utilizadores autorizados podem aceder ao servidor FTP.
+Script_DHCP/ → Configuração automática de servidor DHCP.
 
-- `config_ssh.sh`: Este script automatiza a instalação e configuração do serviço SSH em um sistema CentOS.
+Script_FTP/ → Criação e gestão de servidor FTP.
 
-## Como Usar
-Os Scripts estão ready-to-use, por isso basta fazer o download dos .sh e inserir dentro da Máquina Cliente. Juntamente com os Scripts, existem 2 manuais a seguir para realizar depois de correr os Scripts de SSH e FTP ( Instruções para SSH.pdf e Instruções para FTP.pdf ), pois os Clientes não conseguem aceder a este sem id_rsa.
+Script_SSH/ → Configuração de acesso remoto seguro via SSH.
 
-1. Execute o script: `./nome_do_script.sh`
+config_IP_Estático/ → Script simples para atribuição de IP estático a interfaces.
+
+Cada pasta contém um script funcional e comentado, acompanhado de uma explicação básica sobre a sua finalidade.
+
+#Objetivo
+
+O propósito principal deste repositório é documentar a evolução prática das minhas competências em Linux e scripting.
+Com o tempo, planeio adicionar novos scripts relacionados com:
+
+Automação de rede e configuração de serviços;
+
+Administração de sistemas;
+
+Monitorização e segurança;
+
+Scripts de apoio a projetos e laboratórios práticos.
