@@ -1,5 +1,4 @@
 # Repositório de Scripts Shell desenvolvidos no percurso do CET de Gestão de Redes e Sistemas Computacionais (ATEC)
-Criação de Scripts de DHCP, FTP e SSH
 
 # Sobre o Repositório
 
